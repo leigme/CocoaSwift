@@ -13,8 +13,9 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // 初始化游戏场景
         let scene = GameScene(size: view.bounds.size)
+        // 显示SpriteKit视图
         let skView = view as! SKView
         skView.showsFPS = true
         skView.showsNodeCount = true
